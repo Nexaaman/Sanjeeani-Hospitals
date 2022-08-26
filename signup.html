@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+    
+  </head>
+  <body>
+    <div class="signform">
+      <img
+        src="media/sanjeevni logo.png"
+        alt="There is an image"
+        width="400"
+        height="400"
+      />
+      <form action="GET">
+        <h1>Create Account</h1>
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <div class="firstmiddle">
+            <p>First Name :</p>
+            <input type="text" name="first name" id="first name" required />
+            <p>Middle Name :</p>
+            <input type="text" name="middle name" id="middle name" />
+          </div>
+          <div class="lastage">
+            <p>Last Name :</p>
+            <input type="text" name="last name" id="last name" required />
+            <p>Age :</p>
+            <input type="number" name="age" id="age" required />
+          </div>
+          <div class="info">
+            <p>Gender :</p>
+            <span class="gender"
+              ><p>
+                <input type="radio" name="gender" id="Male" /> Male
+                <input type="radio" name="gender" id="Female" />Female
+              </p></span
+            >
+            <p>Email :</p>
+            <input type="email" name="email" id="email" required />
+            <p>Contact No :</p>
+            <input type="number" name="contactNo." id="contactNo" required />
+          </div>
+          <p>Address :</p>
+          <textarea name="Address" id="" cols="60" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Guardian Information</legend>
+          <div class="firstmiddle">
+            <p>First Name :</p>
+            <input type="text" name="first name" id="first name" required />
+            <p>Middle Name :</p>
+            <input type="text" name="middle name" id="middle name" />
+          </div>
+          <div class="lastage">
+            <p>Last Name :</p>
+            <input type="text" name="last name" id="last name" required />
+            <p>Age :</p>
+            <input type="number" name="age" id="age" required />
+          </div>
+          <div class="info">
+            <p>Gender :</p>
+            <span class="gender2" required
+              ><p>
+                <input type="checkbox" name="gender" id="Male1" /> Male
+                <input type="checkbox" name="gender" id="Female2" />Female
+              </p></span
+            >
+            <p>Email :</p>
+            <input type="email" name="email" id="email" required />
+            <p>Contact No :</p>
+            <input type="number" name="contactNo." id="contactNo" required />
+          </div>
+            <select name="relation" id="relation" required>
+              <option value="Relation">Relation</option>
+              <option value="Father/Mother">Father/Mother</option>
+              <option value="Spouse">Spouse</option>
+              <option value="Husband">Husband</option>
+              <option value="Guardian">Guardian</option>
+              <option value="Other">Other</option>
+            </select>
+        </fieldset>
+        <span class="termcond">
+          <input type="checkbox" required/>
+          <p>"I read all Terms and Condition"</p>
+        </span>
+        <div class="Done">
+          <div class="popup" id="popup-1">
+            <div class="content">
+              <div class="logo"><img src="media/sanjeevni logo.png" alt="" width="175px" height="200px"><h2>Welcome!</h2></div>
+              <div class="close-btn" onclick="togglePop()">×</div>
+              <p class="password"><h4>Enter Email and a new password</h4></p>
+              <div class="input-field">
+                <input placeholder="Email" class="validate"  required/>
+               </div>
+               <div class="input-field">
+                 <input placeholder="Password" class="validate" required/>
+               </div>
+               <button class="second-button">Sign in</button>
+              </div>
+          <button onclick="togglePop()" class="btn">Submit</button>
+          <script>
+            function togglePop() {
+              document.getElementById("pop-1").classList.toggle("active");
+            }
+          </script>
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer>
+    &copy2022 sanjeevni Hospitals And Healthcare Limited. All Rights
+    Reserved
+  </footer>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Buttons.css" />
+    <link rel="stylesheet" href="bookappoint.css" />
+    <title>Book</title>
+  </head>
+  <body>
+    <header>
+      <div class="booknav">
+        <img src="media/sanjeevni logo.png" alt="" width="150px" height="100px" />
+        <img id="logimg" src="media/login.png" alt="" width="20px" height="20px">
+        <div class="signin">
+          <div class="popup" id="popup-1">
+            <div class="content">
+              <div class="signlogo">
+                <img
+                  src="media/sanjeevni logo.png"
+                  alt=""
+                  width="175px"
+                  height="200px"
+                />
+                <h1>SignIn</h1>
+              </div>
+              <div class="close-btn" onclick="togglePopup()">×</div>
+              <div class="input-field">
+                <input placeholder="Email" class="validate" required />
+              </div>
+              <div class="input-field">
+                <input placeholder="Password" class="validate" required />
+              </div>
+              <button class="second-button">Sign in</button>
+              <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+          </div>
+          <a id="signin" onclick="togglePopup()" >Sign In</a>
+          <script>
+            function togglePopup() {
+              document.getElementById("popup-1").classList.toggle("active");
+            }
+          </script>
+        </div>
+        <img src="media/signup.png" alt="" id="sigimg" width="20px" height="20px" onclick="window.location.href='signup.html';">
+        <a id="signup" href="signup.html">SignUp</a>
+        <div class="back">
+                <img src="media/back.png" alt="" width="30px" height="30px" onclick="window.location.href='Home.html';">
+                <a id="back" href="Home.html"> Back </a>
+        </div>
+      </div>
+    </header>
+    <img src="media/appointment.jpg" alt="" width="1320px" >
+    <h1>Book your Appointment Today!</h1>
+    <h2>1.  Select your City</h2>
+    <div class="selectcity">
+      <img src="media/city/indiagate.png" alt="" id="delhi" width="200px"> 
+      <img src="media/city/mumbai.png" width="200px" alt="" id="mumbai">
+      <img src="media/city/pune.png" alt="" width="200px" id="pune" >
+      <img src="media/city/hyderbad.png" width="200px" alt="" id="hyderabad">
+      <img src="media/city/kolkata.png" width="200px" alt="" id="kolkata">
+      <img src="media/city/chennai.png" width="200px" alt="" id="chennai">
+      <img src="media/city/bangalore.png" width="200px" alt="" id="bangalore">
+    </div>
+    <div class="cityname">
+      <h4>Delhi</h4>
+      <h4>Mumbai</h4>
+      <h4>Pune</h4>
+      <h4>Hyderbaad</h4>
+      <h4>Kolkata</h4>
+      <h4>Chennai</h4>
+      <h4>Banglore</h4>
+    </div>
+    <h2> 2. Select Speciality</h2>
+    <div class="selectdisease">
+      <img src="media/disease/cardio.png" width="185px" alt="" id="cardio">
+      <img src="media/disease/onco.png" alt="" width="185px" id="onco" >
+      <img src="media/disease/ortho.png" width="185px" height="70px" alt="" id="ortho">
+      <img src="media/disease/neuro.png" width="185px" alt="" id="neuro">
+      <img src="media/disease/diabeto.png" width="185px" alt="" id="diabeto">
+      <img src="media/disease/gas.png" width="185px" alt="" id="gas">
+    </div>
+    <div class="diseasename">
+      <h4>Cardiology</h4>
+      <h4>Oncology</h4>
+      <h4>Orthopaedics</h4>
+      <h4>Neurology</h4>
+      <h4>Diabetology</h4>
+      <h4>Gastreonterology</h4>
+    </div>
+    <h2> 3. Appointent Form</h2>
+    <div class="info">
+
+      <form action="GET">
+        <fieldset>
+          <div class="firstmiddle">
+            <p>First Name :</p>
+            <input type="text" name="first name" id="first name" required />
+            <p>Middle Name :</p>
+            <input type="text" name="middle name" id="middle name" />
+          </div>
+          <div class="lastage">
+            <p>Last Name :</p>
+            <input type="text" name="last name" id="last name" required />
+            <p>Age :</p>
+            <input type="number" name="age" id="age" required />
+          </div>
+          <div class="info">
+            <p>Gender :</p>
+            <span class="gender"
+              ><p>
+                <input type="radio" name="gender" id="Male" /> Male
+                <input type="radio" name="gender" id="Female" />Female
+              </p></span
+            >
+            <p>Email :</p>
+            <input type="email" name="email" id="email" required />
+            <p>Contact No :</p>
+            <input type="number" name="contactNo." id="contactNo" required />
+          </div>
+          <p>Address :</p>
+          <textarea name="Address" id="" cols="60" rows="5"></textarea>
+        </fieldset>
+    </div>
+    <div class="Done">
+      <div class="pop" id="pop-1">
+        <div class="con">
+          <div class="logo"><img src="media/sanjeevni logo.png" alt="" width="175px" height="200px"><h2>Done!</h2></div>
+          <div class="close" onclick="togglePop()">×</div>
+            <p>
+              Your request is under process. We reach you soon.
+              * Appointment Date and Time will send
+            </p>
+           <button class="sbutton">Sign in</button>
+          </div>
+      <button onclick="togglePop()" class="btn">Submit</button>
+      <script>
+        function togglePop() {
+          document.getElementById("pop-1").classList.toggle("active");
+        }
+      </script>
+    </div>
+  </body>
+</html>

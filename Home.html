@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Sanjeevni Hospital</title>
+    <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="Buttons.css">
+  </head>
+  <body>
+    <div class="top">
+      <ul>
+        <li>
+          <a href="#" target="_blank" rel="">Follow us on social Media</a>
+        </li>
+        <li>
+          <select name="Language" id="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </li>
+        <li>
+          <div class="signin">
+            <div class="popup" id="popup-1">
+              <div class="content">
+                <div class="signlogo"><img src="media/sanjeevni logo.png" alt="" width="175px" height="200px"><h1>SignIn</h1></div>
+                <div class="close-btn" onclick="togglePopup()">×</div>
+                <div class="input-field">
+                 <input placeholder="Email" class="validate"  required/>
+                </div>
+                <div class="input-field">
+                  <input placeholder="Password" class="validate" required/>
+                </div>
+                <button class="second-button">Sign in</button>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+              </div>
+            </div>
+            <button onclick="togglePopup()" class="btn">Sign In</button>
+            <script>
+              function togglePopup() {
+                document.getElementById("popup-1").classList.toggle("active");
+              }
+            </script>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <hr>
+    <header>
+      <nav>
+        <div class="img">
+          <img src="media/sanjeevni logo.png" alt="" width="200px" />
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Find Hospitals,Docters,locations...."
+          /><img
+            src="media/search icon.png"
+            alt="There was an search icon"
+            width="35px"
+          />
+        </div>
+        <span>
+          <div class="contactus">
+            <div class="pop" id="pop-1">
+              <div class="con">
+                <img class="docimg" src="media/Docter.png" alt="" width="500px" height="900px">
+                <div class="close" onclick="togglePop()">×</div>
+                <div class="data">
+                  <h2>Contact Us</h2>
+                  <p id="desc">Sanjeevni Hospitals and Health Care is always looking to make things easier for you. Our aim is to provide our customers with the best medical facilities, constant care, and reliable support. If you would like to get in touch with a doctor from a specific department, would like some specific information about the services we provide, or just have a question for us, please fill up the Form given below and we will get back to you.</p>
+                  <div class="sel">
+                    <p>Type of Query </p>
+                      <input type="radio" name="Query" id = "Enquiry">Enquiry <input type="radio" name="Query" id="Complaint"> Complaint <input type="radio" name="Query" id = "Feedback">  Feedback
+                    </p>
+                  </div>
+                 
+                  <form action="GET">
+                    <fieldset>
+                      <div class="firstmiddle">
+                        <p>First Name :</p>
+                        <input type="text" name="first name" id="first name" required />
+                        <p>Middle Name :</p>
+                        <input type="text" name="middle name" id="middle name" />
+                      </div>
+                      <div class="lastema">
+                        <p>Last Name :</p>
+                        <input type="text" name="last name" id="last name" required />
+                        <p>Email : </p>
+                        <input type="email" name="email" id="email" required />
+                      </div>
+                      <div class="contahos">
+                        <p>Contact No : </p>
+                        <input type="number" name="contactNo." id="contactNo" required>
+                        <p>Select Hospital : <select name= "Hospitals" id="Hospitals">
+                          <option value="Hospitals">Hospitals</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Mumbai">Mumbai</option>
+                          <option value="Pune">Pune</option>
+                          <option value="Hyderabaad">Hyderabaad</option>
+                          <option value="Kolkata">Kolkata</option>
+                          <option value="Chennai">Chennnai</option>
+                          <option value="Banglore">Banglore</option>
+                          </select></p>
+                      </div>
+                        <p>Message : <textarea name="message" id="" cols="60" rows="5"></textarea></p></p>
+                        <button class="sbtn" name="submit" >Submit</button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <button onclick="togglePop()" class="btn">ContactUs</button>
+            <script>
+              function togglePop() {
+                document.getElementById("pop-1").classList.toggle("active");
+              }
+            </script>
+          </div>
+        </span>
+      </nav>
+    </header>
+    <hr>
+      <div class="functions">
+          <div class="fac">
+              <button class="dropbtn">Patient care</button>
+              <div class="dropdown-content">
+              <a href="#">Patient care</a>
+              <a href="#">Find Docter</a>
+              <a href="#">Pay Online</a>
+              <a href="#">Service</a>
+              </div>
+          </div>
+          <div class="fac">
+              <button class="dropbtn">Centre of Excellence</button>
+              <div class="dropdown-content">
+              <a href="#">Centre of Execellence</a>
+              <a href="#">Emergency</a>
+              <a href="#">ICU</a>
+              <a href="#">Critical Care</a>
+              <a href="#">Transplant</a>
+              <a href="#">Robotics</a>
+              </div>
+          </div>
+          <div class="fac">
+              <button class="dropbtn">Academic</button>
+              <div class="dropdown-content">
+              <a href="#">Academic and Research</a>
+              <a href="#">Courses</a>
+              <a href="#">Academics</a>
+              <a href="#">Clinical Research</a>
+              </div>
+          </div>
+          <div class="fac">
+              <button class="dropbtn">Hospitals</button>
+              <div class="dropdown-content">
+              <a href="#">Delhi</a>
+              <a href="#">Mumbai</a>
+              <a href="#">Pune</a>
+              <a href="#">Hyderabaad</a>
+              <a href="#">Kolkata</a>
+              <a href="#">Chennai</a>
+              <a href="#">Banglore</a>
+              </div>
+          </div>
+          <div class="fac">
+              <button class="dropbtn">Careers</button>
+              <div class="dropdown-content">
+              <a href="#">Careers</a>
+              <a href="#">Docter</a>
+              <a href="#">Nurse</a>
+              <a href="#">Staff</a>
+              <a href="#">Intern</a>
+              </div>
+          </div>
+      </div>
+    <hr>
+    <div class="container">
+      <div class="slider">
+        <div class="slides">
+          <img src="media/Sanjeevni Healthcare.png" alt="" style="width:100%" height="965 px">
+        </div>
+        <div class="slides">
+          <img src="media/hp3.jpg" alt="" style="width:100%" height="965 px">
+        </div>
+        <div class="slides">
+          <img src="media/hp4.jpg" alt="" style="width:100%" height="965 px">
+        </div>
+      </div>
+      <div style="text-align: center;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
+    <nav class="facilities">
+      <span>
+        <img  src="media/fac logo_s/book.png" onclick="window.location.href='bookappoint.html';" alt="">
+        <img  src="media/fac logo_s/consult.png" onclick="window.location.href='consult.html';" alt="">
+        <img  src="media/fac logo_s/medi_logo.png" onclick="window.location.href='/';" alt="">
+        <img  src="media/fac logo_s/hospital.png" onclick="window.location.href='/';" alt="">
+      </span>
+      <span>
+        <div class="plinks">
+          <ul>
+            <li><a id="book" href="bookappoint.html" target ="_blank">Book Appointment</a></li>
+            <li><a id="consult" href = "consult.html" target = "_blank">Consult Online</a></li>
+            <li><a id="buymedi" href = "/" target = "_blank">Buy Medicine</a></li>
+            <li><a id="find" href = "/" target = "_blank">Find Hospital</a></li>
+          </ul>
+        </div>
+      </span>
+      <div class="imgtxt">About us</div>
+      <section class="about">
+          <div class="vismis">
+            <h2> Company vision</h2>
+            <p>
+              <h3>Sanjeevi's vision for the next phase of development is to 'Touch a Billion Lives'.</h3>
+            </p>
+            <h2> Mission Statement </h2>
+            <p>
+              <h3>“Our mission is to bring healthcare of International standards within the reach of every individual. We are committed to the achievement and maintenance of excellence in education, research and healthcare for the benefit of humanity”.</h3>
+            </p>
+            <br>
+          </div>
+
+          <div class="cont">
+            <p><h3>Sanjeevni Hospitals and Healthcare was established in 2005 by Dr.Sanjeevni, renowned as the architect of modern healthcare in India. As the nation's most affordable corporate hospital and health centre, Sanjeevi Hospitals and Healthcare is acclaimed for pioneering the private healthcare revolution in the country.</h3></p>
+            <br>
+            <p>
+             <h3>The cornerstones of Sanjeevni's legacy are its unstinting focus on clinical excellence, affordable costs, modern technology and forward-looking research & academics. Sanjeevni Hospitals was among the first few hospitals in the world to leverage technology to facilitate seamless healthcare delivery. The organization embraced the rapid advancement in medical equipments across the world, and pioneered the introduction of several cutting edge innovations in India.</h3>
+            </p>
+            <br>
+            <p>
+              <h3>Sanjeevi Hospitals has championed numerous social initiatives to cite a few which assist underprivileged children - SACHi (Save a Child's Heart Initiative) which screens and provides paediatric cardiac care for congenital heart diseases, SAHI (Society to Aid the Hearing Impaired) and the CURE Foundation focused on cancer care.</h3>
+            </p>
+            <br>
+            <h3>Thank you to listen our story.</h3>
+          </div>
+
+      </section>
+  </body>
+  <hr>
+  <footer>
+    &copy2022 sanjeevni Hospitals And Healthcare Limited. All Rights
+    Reserved
+  </footer>
+</html>

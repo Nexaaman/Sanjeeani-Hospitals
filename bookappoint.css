@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: aliceblue;
+  color: black;
+}
+body {
+  padding: 0px 100px;
+  margin: 0px 200px;
+}
+.booknav {
+  height: 100px;
+  display: flex;
+  width: 1320px;
+}
+.booknav a {
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+#signup {
+  position: relative;
+  left: 500px;
+  top: 40px;
+  color: black;
+}
+#signin {
+  position: relative;
+  left: 250px;
+  top: 40px;
+  color: black;
+  background-color: aliceblue;
+}
+.back {
+  height: 33px;
+  width: 142px;
+  position: relative;
+  left: 700px;
+  top: 35px;
+}
+#back {
+  color: black;
+  position: relative;
+  bottom: 10px;
+}
+#logimg {
+  position: relative;
+  top: 40px;
+  left: 240px;
+}
+#sigimg {
+  position: relative;
+  left: 490px;
+  top: 40px;
+}
+h1 {
+  color: blue;
+  text-align: center;
+  padding-top: 100px;
+}
+h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+.selectcity {
+  display: flex;
+}
+.selectcity img {
+  padding: 50px;
+  overflow: hidden;
+}
+.cityname,
+.diseasename {
+  display: flex;
+}
+.cityname h4,
+.diseasename h4 {
+  width: 188px;
+  text-align: center;
+  padding: 0px 60px;
+  position: relative;
+  bottom: 50px;
+}
+.selectdisease {
+  display: flex;
+}
+.selectdisease img {
+  padding: 50px;
+  overflow: hidden;
+}
+#ortho {
+  position: relative;
+  top: 25px;
+}
+
+/* appointent info */
+
+fieldset p {
+  padding-left: 30px;
+  font-size: 20px;
+  width: 150px;
+  height: 30px;
+}
+
+fieldset input {
+  width: 400px;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-color: blue;
+}
+.gender {
+  height: 50px;
+  width: 100px;
+}
+
+.gender input {
+  width: 90px;
+  height: 20px;
+  position: relative;
+  bottom: 18px;
+}
+.gender p {
+  display: flex;
+  font-size: 15px;
+  padding-top: 12px;
+  position: relative;
+  right: 100px;
+}
+
+.firstmiddle {
+  display: flex;
+}
+.lastage {
+  display: flex;
+}
+.info {
+  display: flex;
+}
+.info input {
+  width: 240px;
+}
+
+textarea {
+  position: relative;
+  left: 175px;
+  bottom: 50px;
+}
+
